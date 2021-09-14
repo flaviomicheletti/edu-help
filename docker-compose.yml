@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  php:
+    container_name: php
+    image: php:7.4-apache
+    ports:
+      - 3001:80
+    volumes:
+      - ./src:/var/www/html/
